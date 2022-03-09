@@ -1,11 +1,24 @@
-<!-- https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js -->
-<!DOCTYPE html>
+<!-- https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js
 <html ng-app>
-    <head>
-        <script src="~/Scripts/angular.js"></script>
-    </head>
     <body>
         <input  ng-model="user.name">
         <p ng-show="user.name">Hi {{user.name}}</p>
+
+        <script src="angular.js"></script>
     </body>
+</html> -->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>First AngularJS Application</title>
+    <script src= "scripts/angular.js"></script>
+</head>
+<body ng-app >
+    <h1>Multiplication</h1> 
+    <h5>Num 1</h5><input type="text" ng-model="Num1" /> 
+    <h5>Num 2</h5><input type="text" ng-model="Num2" /> 
+    <h5>Sum</h5><span ng-show="Num2">{{Num1 * Num2}}</span>  
+</body>
 </html>
